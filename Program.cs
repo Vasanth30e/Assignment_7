@@ -23,6 +23,7 @@ namespace Assignment_7_2_
 
             int count = fruitList.Count;
 
+            //Total Count
             Console.WriteLine("Total Number of Elements: " + count);
 
             Console.WriteLine("\n***List of Fruits***");
@@ -31,12 +32,10 @@ namespace Assignment_7_2_
                 Console.WriteLine(" " + item);
             }
 
-            Console.WriteLine("Enter the Fruit you want to chech");
-
+            //Checking the list if the fruit list contains the entered fruit or not
+            Console.WriteLine("Enter the Fruit you want to check that if the Fruit list Contains Or Not");
             string fruitPresent = Console.ReadLine();
-
             bool isPresent = fruitList.Contains(fruitPresent);
-
             if(isPresent == false)
             {
                 Console.WriteLine("It not contains");
@@ -44,15 +43,10 @@ namespace Assignment_7_2_
 
             else
             {
-                Console.WriteLine("It Contains");
+                Console.WriteLine($"It Contains the fruit \n The Fruit that is entered by the user is {fruitPresent}");
             }
 
-            
-
-
-
-
-
+            //Inserting the Fruit
             Console.WriteLine("\nInsert a Fruit");
             string addFruit = Console.ReadLine();
 
@@ -64,6 +58,7 @@ namespace Assignment_7_2_
                 Console.WriteLine(" " + item);
             }
 
+            //Removing the fruit
             Console.WriteLine("\nEnter the fruit you want to remove");
             string removeFruit = Console.ReadLine();
 
@@ -75,6 +70,7 @@ namespace Assignment_7_2_
                 Console.WriteLine(" " + item);
             }
 
+            Console.WriteLine($"Removed Fruit is {removeFruit}");
 
             Console.ReadKey();
         }
