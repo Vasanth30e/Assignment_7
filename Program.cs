@@ -33,17 +33,17 @@ namespace Assignment_7_2_
             }
 
             //Checking the list if the fruit list contains the entered fruit or not
-            Console.WriteLine("Enter the Fruit you want to check that if the Fruit list Contains Or Not");
+            Console.WriteLine("\nEnter the Fruit you want to check that if the Fruit list Contains Or Not: \t");
             string fruitPresent = Console.ReadLine();
             bool isPresent = fruitList.Contains(fruitPresent);
             if(isPresent == false)
             {
-                Console.WriteLine("It not contains");
+                Console.WriteLine("\nIt not contains");
             }
 
             else
             {
-                Console.WriteLine($"It Contains the fruit \n The Fruit that is entered by the user is {fruitPresent}");
+                Console.Write($"\n\"It Contains the fruit\" \n The Fruit that is entered by the user is \'{fruitPresent}\'\n");
             }
 
             //Inserting the Fruit
@@ -58,6 +58,8 @@ namespace Assignment_7_2_
                 Console.WriteLine(" " + item);
             }
 
+            Console.WriteLine($"\nInserted Fruit is {addFruit}");
+
             //Removing the fruit
             Console.WriteLine("\nEnter the fruit you want to remove");
             string removeFruit = Console.ReadLine();
@@ -70,7 +72,7 @@ namespace Assignment_7_2_
                 Console.WriteLine(" " + item);
             }
 
-            Console.WriteLine($"Removed Fruit is {removeFruit}");
+            Console.WriteLine($"\nRemoved Fruit is {removeFruit}");
 
             Console.ReadKey();
         }
